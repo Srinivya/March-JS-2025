@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        let a = 10;
+        let b = 20;
+        let c = 30;
+        // if
+        // control statement
+        // if (a < b) {
+        //     console.log("a is greater than b");
+        // }
+        // else {
+        //     console.log(" a is smaller than b");
+        // }
+
+        // else if
+        // if (a > b) {
+        //     console.log("a is greater than b");
+        // }
+
+        // else if (a > c) {
+        //     console.log("a is smaller than c");
+        // }
+
+        // else {
+        //     console.log("Not a value ");
+        // }
+
+        // nested if
+        let written = 70;
+        let physical = 80;
+
+        if (written > 50) {
+            if (physical > 40) {
+                console.log("selected");
+            }
+            else {
+                console.log("Physical disqualified")
+            }
+        }
+        else {
+            console.log("written failed");
+        }
+
+
+        // loop control/repetative control
+        // for 
+        // for(initilization;condition;increment/decrement){
+
+        // }
+
+        // for (let i = 1; i < 10; i++) {
+        //     console.log(i);
+        // }
+
+
+        // for (let i = 22; i >= 10; i--) {
+        //     console.log(i);
+        // }
+        // while
+        // initial value;
+        //         while (condition) {
+        //             Code
+        //             Increment / decrement
+        //         }
+
+        // let i = 1;
+        // while (i <= 10) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+
+        // do -while
+
+        // initial value;
+        //         do {
+        //             code;
+        //             incre / dec;
+        //         }
+        //         while (condition);
+
+
+        // let pw = 123;
+        // do {
+        //     console.log("Enter the password");
+        // }
+        // while (pw == 123);
+
+
+        // let add = 1;
+        // do {
+        //     console.log(add);
+        //     add++;
+        // }
+        // while (add <= 10);
+
+        // for in
+
+        // for (let key in object) {
+        //     code
+        // }
+
+        // let aa = {
+
+        //     "name": 'name1',
+        //     "age": 20,
+        //     "course": "Js"
+        // }
+
+        // console.log(aa.name);
+        // for (i in aa) {
+        //     console.log(aa[i]);
+        //     console.log(i, ":", aa[i]);
+        // }
+
+
+        // for of
+
+
+        // for( let variable of aa){
+
+        // }
+
+        // let k = 'helloworld';
+
+        // for (aa of k) {
+        //     console.log(aa);
+        // }
+
+
+
+        // let snacks = ["chips", "icecream", "choclate", "fruits", "pizza"];
+        // for (i of snacks) {
+        //     if (i == "fruits") {
+        //         break;
+        //     }
+        //     console.log(i);
+        // }
+
+
+        // Jumping/Transfer Statement
+        let snacks = ["chips", "icecream", "choclate", "fruits", "pizza"];
+        for (a of snacks) {
+            if (a == "fruits") {
+                continue;
+            }
+            console.log(a);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
