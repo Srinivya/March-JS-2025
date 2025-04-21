@@ -1,0 +1,103 @@
+What is   Javascript 
+History of Javascript
+Fundaments
+1->Variables
+2->Keywords
+3->DataType
+
+Operators in Js
+1.Arithmetic Operator
+2.Assignment Operator
+3.Relational Operation
+4.Logical operation
+5.Bitwise operator
+6.Unary Operator
+7.Ternary operator
+
+control statement
+if
+if else
+else if
+Nested if
+
+loop control/repetative control
+
+   for
+
+for(initilization;condition;increment/decrement){
+ }
+
+  while
+        initial value;
+        while (condition) {
+            Code
+            Increment / decrement
+        }
+
+    do -while
+
+        initial value;
+        do {
+            code;
+            incre / dec;
+        }
+        while (condition);
+
+
+
+   for in
+for (let key in object) {
+            code
+        }
+
+        for of
+
+        or (let variable of aa) {
+
+        }
+Jumping/Transfer Statement
+break
+continue
+
+
+ switch (expresion) {
+            case x;
+                //code
+                break;
+
+            case y;
+                //code
+                break;
+
+            default:
+            //code
+
+
+        }
+
+
+        
+
+          for (let i = 0; i <= 5; i++) {
+            let row = " ";
+
+            for (let j = 0; j <= i; j++) {
+                row += "1";
+            }
+            console.log(row);
+
+        }
+
+        i=0 j=0  1
+        i=1 j=0  1  1
+
+
+        function
+
+        function functioname(){
+            code
+        }
+
+functioname();
+
+
