@@ -101,3 +101,9 @@ continue
 functioname();
 
 
+Default parameters
+ Closure function
+
+  11111
+  11111
+  11111
