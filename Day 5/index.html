@@ -12,7 +12,11 @@
 
 
         // function greet(name = "hello") {
-        //     // console.log(`Hey ,${name}!`);
+
+        //     console.log("hey", name, "!");
+
+        //     console.log(`Hey ,${name} `);
+
         //     console.log(name);
         // }
         // greet();
@@ -20,15 +24,22 @@
 
 
         // function sum(...numbers) {
+
         //     return numbers.reduce((acc, num) => acc + num, 0)
+
         // }
+
         // console.log(sum(1, 3, 4, 5));
 
 
         // Closure function
-        //outer function
+        // outer function
+
+
         // function counter() {
+
         //     let count = 0;
+
         //     return function () {
         //         count++;
         //         return count;
@@ -36,6 +47,8 @@
         // }
 
         // const increment = counter();
+
+
         // console.log(increment());
         // console.log(increment());
         // console.log(increment());
@@ -43,6 +56,7 @@
 
 
         // function operator(a, b, operation) {
+
         //     return operation(a, b);
         // }
 
@@ -52,34 +66,48 @@
         // console.log(operator(5, 3, subr));
 
 
+
+
         let a = "hello-world,hello-master";
 
-        let b = "CHOC   LATE   "
+        let b = "      CHOC   LATE   "
 
         console.log(a.charAt(4));
         console.log(a.charCodeAt(4));
         console.log(a.charCodeAt(5));
 
         console.log(a.concat('hello'));
+
         console.log(a.includes('ol'));
         console.log(a.toUpperCase());
         console.log(b.toLowerCase());
+        console.log("-------------")
         console.log(b.trim());
         console.log(a.indexOf("l"));
 
         console.log(b.match('C'));
 
-        let fruits = "apple,orange,graphes";
-        let character = fruits.split(",");
+
+
+        let fruits = "apple-orange-graphes";
+
+
+        let character = fruits.split("-");
 
         console.log(character);
 
+
+        console.log("-------------")
         console.log("hello".slice(1, 4));
+
+
 
         let value = "hello string";
 
         console.log(value.slice(0, 4))
-        console.log(b.replace('H', "P"));
+
+
+        console.log(b.replace('L', "P"));
 
 
 

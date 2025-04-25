@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fruits = ["apple", "banana", "orange"];
+        fruits.push("mango");
+        console.log(fruits);
+
+        fruits.pop();
+        console.log(fruits);
+
+
+        let nums = [2, 4, 6, 10];
+        // nums.unshift(1);
+        // console.log(nums);
+
+        // nums.shift();
+        // console.log(nums);
+
+        let mixed = nums.concat(3, [4, 5]);
+        console.log(mixed);
+
+
+        let arr = [1, 2, 3, 4, 5];
+        arr.splice(3, 0, "three");
+        console.log(arr);
+
+        let nums1 = [1, 4, 5, 6, 8, 9];
+        let sliced = nums1.slice(1, 3);
+        console.log(sliced);
+
+
+        let color = ["red", "green", "blue"];
+        console.log(color.includes("black"));
+
+        console.log(color.indexOf("blue"));
+
+        let ages = [10, 20, 30, 40, 50];
+        let adult = ages.find(age => age >= 25);
+        console.log(adult);
+
+
+        let nums_value = [1, 2, 3];
+        let squares = nums.map(n => n * n);
+        console.log(squares);
+
+
+
+    </script>
+</body>
+
+</html>
