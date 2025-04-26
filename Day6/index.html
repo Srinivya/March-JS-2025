@@ -43,17 +43,62 @@
         console.log(color.indexOf("blue"));
 
         let ages = [10, 20, 30, 40, 50];
+
         let adult = ages.find(age => age >= 25);
         console.log(adult);
 
-
+        console.log("------------------")
         let nums_value = [1, 2, 3];
-        let squares = nums.map(n => n * n);
+
+        let squares = nums_value.map(n => n * n);
         console.log(squares);
+
+
+        let arr_num = [2, 4, 6, 8, 10, 3, 5, 7, 11];
+        let even = arr_num.filter(num => num % 2 === 0);
+        console.log(even);
+
+        let sum = arr_num.reduce((a, b) => a + b, 0);
+        console.log(sum);
+
+        let sorting = [20, 3, 56, 98, 222, 58];
+        sorting.sort((a, b) => a - b);
+        console.log(sorting);
+
+
+        let some_val = [10, 20, 30];
+        console.log(some_val.some(n => n > 10));
+
+        console.log(ages.every(n => n % 10 === 0));
+
+
+        // Foreach
+        // array.forEach(function(element,index,array){
+
+        // })
+
+        console.log("-------------")
+
+
+        let numbers = [1, 2, 3, 4, 5];
+
+        numbers.forEach(function (num) {
+            console.log(num);
+        })
+
+        let games = ["snake and ladder", "stone paper scissor", "XO game"]
+
+        games.forEach(game =>
+            console.log(game.toUpperCase())
+        );
+
+
+
+
 
 
 
     </script>
 </body>
 
-</html>
+</html>-
