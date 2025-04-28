@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+
+    #todo-list li{
+        margin: 5px 0;
+       color: green;
+        padding: 10px;
+    }
+    .delete-btn{
+        margin: 10px;
+        color: red;
+        cursor: pointer;
+    }
+</style>
+
+
+
+</head>
+<body>
+    
+<h1>To-Do List</h1>
+
+<input type="text" id="task-input" placeholder="Enter a task">
+<button id="add-btn">Add</button>
+
+<ul id="todo-list">
+
+</ul>
+
+
+<script>
+
+const taskInput=document.getElementById('task-input');
+const addBtn=document.getElementById("add-btn");
+const ulList=document.getElementById("todo-list");
+
+
+addBtn.addEventListener("click",
+function(){
+     const store=taskInput.value.trim();
+
+if(taskInput !==""){
+
+const li=document.createElement("li");
+li.textContent=store;
+
+
+const deletBtn=document.createElement('span');
+deletBtn.textContent="Delete";
+
+
+deletBtn.classList.add('delete-btn');
+
+
+deletBtn.addEventListener('click',
+function(){
+    ulList.removeChild(li);
+}
+);
+
+li.appendChild(deletBtn);
+
+
+ulList.appendChild(li);
+
+
+taskInput.value="";
+
+}});
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+
+
+
+
+</html>
