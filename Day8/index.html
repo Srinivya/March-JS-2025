@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .title{
+        width: 500px;
+        height: 100px;
+        background-color: #2cbfdc;
+        text-align: center;
+
+    }
+</style>
+
+</head>
+<body>
+
+
+    <h1 class="title">Welcome</h1>
+
+    <!-- <p class="info">Para</p>
+    <p class="info">Para</p>
+    <p class="info">Para</p>
+    <p class="info">Para</p> -->
+
+
+<!-- <input type="text"  id="myInput" placeholder="Click here" onkeydown="down()" onkeyup="up()"> -->
+
+<!-- <button ondblclick="change()">click here</button> -->
+
+
+<form onsubmit="sub()">
+
+<label >Name:</label>
+<input type="text" onfocus="foc()" id="focus">
+
+<button>Submit</button>
+
+</form>
+
+
+
+
+
+
+    <script>
+
+
+const title=document.querySelector(".title");
+
+const focusable=document.getElementById("focus");
+// title.style.color='green';
+
+// const paragraph=document.querySelector(".info");
+// paragraph.style.color="blue";
+
+// const paragraph=document.querySelectorAll(".info");
+
+// paragraph.forEach((p,index)=>{
+// p.textContent=`This is paragraph ${index+1}`;
+
+// })
+
+
+// title.addEventListener('click',()=>{
+//     title.style.backgroundColor="green";
+//     title.textContent="Clicked"
+// })
+
+
+// title.addEventListener("mouseover",()=>{
+
+
+//     title.style.height="500px";
+//     title.textContent="Mouseovered";
+// })
+
+
+
+
+// title.addEventListener("mouseout",()=>{
+//  title.textContent="Mouse out"
+//     title.style.backgroundColor="orange";
+// })
+
+// mouseenter,mouseleave
+
+
+
+// title.addEventListener("mousedown",()=>{
+//     title.style.backgroundColor="darkred";
+//     title.textContent="MouseDown";
+// })
+
+// title.addEventListener("mouseup",()=>{
+//     title.style.backgroundColor="coral";
+//     title.textContent="mouseup";
+// })
+
+
+
+// const input =document.getElementById("myInput");
+
+
+
+// function down(){
+//     title.innerHTML="Hello boss";
+// }
+
+
+// function up(){
+//     title.innerHTML="Byee boss";
+// }
+
+
+
+// function change(){
+//     title.style.width="700px";
+// }
+
+
+
+// function sub(){
+//     alert("submitted successfully");
+// }
+
+function foc(){
+    focusable.style.color="green";
+}
+
+    </script>
+
+</body>
+</html>
