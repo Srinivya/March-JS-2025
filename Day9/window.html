@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="loading()" onresize="size()">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam enim voluptas cupiditate, voluptatum id eligendi sit velit dolorum dolor saepe tempore ab inventore quod voluptatibus voluptate perferendis praesentium molestiae consequatur totam minus suscipit non reiciendis. Enim facilis, recusandae adipisci quas delectus ducimus aperiam sit. Animi qui totam modi vero optio aperiam distinctio atque unde, consequatur voluptatem consectetur incidunt, tempora cumque est aut exercitationem sapiente. Cumque, incidunt qui. Doloremque non nisi neque fugit ipsa est voluptatum voluptatem pariatur, ullam laudantium excepturi totam. Cum porro dolorum nemo sit, necessitatibus ex dolorem quaerat minima laudantium provident libero ipsa facere perspiciatis! Sequi, enim aspernatur?</p>
+
+<p id="p"></p>
+
+<p>You have resized the window <span id="s1">0</span> times</p>
+
+<script>
+
+    function loading(){
+        alert("Page is loading");
+    }
+var i=0;
+    function size(){
+        var resi = "Width = " + window.outerWidth + "<br>Height = " + window.outerHeight;
+
+var res1=i+=1;
+document.getElementById("p").textContent=resi;
+
+
+document.getElementById("s1").textContent=res1;
+    }
+</script>
+
+</body>
+</html>

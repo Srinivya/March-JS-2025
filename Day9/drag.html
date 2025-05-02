@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+#dragItem{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: center;
+    cursor: grab;
+}
+#dragZone{
+    width: 200px;height: 200px;
+    border: 2px solid maroon;
+    margin: 10px;
+}
+
+</style>
+
+</head>
+<body>
+    <div draggable="true" id="dragItem" ondragstart="dragStart(event)">Drag</div>
+  
+
+    <div id="dragZone" ondragover="allowDrag(event)" ondrop="Drop(event)">Drop here</div>
+
+
+<script>
+function allowDrag(event){
+    event.preventDefault();
+}
+
+function dragStart(event){
+event.dataTransfer.setData("text",event.target.id);
+}
+
+function Drop(event){
+event.preventDefault();
+var data=event.dataTransfer.getData("text");
+var draggedElement=document.getElementById(data);
+event.target.appendChild(draggedElement);
+
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
