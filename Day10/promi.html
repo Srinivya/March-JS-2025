@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+
+// const myPromise=new Promise(
+//     function(resolve,reject){
+
+// const string1="JavScript";
+// const string2="JavaScript";
+
+// if(string1==string2){
+//     resolve();
+// }
+
+
+// else{
+//     reject();
+// }
+// }
+// );
+
+
+// myPromise.then(function(){
+//     console.log("String are equal");
+// })
+// .catch(function(){
+//     console.log("Not equal");
+// })
+
+const helpFunction=function(){
+
+    const myPromise=new Promise(
+    function(resolve,reject){
+
+const string1="Javacript";
+const string2="JavaScript";
+
+if(string1==string2){
+    resolve("String are same");
+}
+
+
+else{
+    reject("String not same");
+}
+}
+);
+return myPromise;
+};
+
+
+
+
+async function practicePromise() {
+    try{
+        let message=await helpFunction();
+        console.log(message);
+      
+
+    }
+    catch(error){
+        console.log("Error: "+error);
+    }
+}
+
+practicePromise();
+
+
+
+
+</script>
+
+
+</body>
+</html>
