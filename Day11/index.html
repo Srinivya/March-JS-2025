@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+
+//   fetch('https://fakestoreapi.com/products')
+//   .then(res=>res.json())
+//   .then(data=>console.log(data))
+//   .catch(error=>console.log(error))
+
+
+const colors=["blue","green","red","orange"];
+
+const [firstColor,secondColor,...thirdcolor]=colors;
+
+// document.writeln(firstColor);
+// document.writeln(secondColor);
+// document.writeln(thirdcolor);
+
+
+
+
+// const person1={
+//     firstName:"Java",
+//     lastName:"Script",
+//     job:"Live action"
+// }
+
+// const person2={
+// fruit:"apple",
+// price:20,
+// quantity:"1 Kg"
+
+// }
+
+// const {fruit,price,quantity,pric1=200}=person2
+
+// document.writeln(fruit)
+// document.writeln(price);
+// document.writeln(quantity)
+// document.writeln(pric1);
+
+// let user;
+// console.log(user.name);
+
+
+
+
+// function isEven(n){
+//     return n%2==1;
+// }
+// console.log(isEven(10));
+
+function withdraw(balance, amount){
+    if(amount>balance){
+        throw new Error("Insufficient funds");
+    }
+    return balance-amount
+}
+
+try{
+    let newBalance=withdraw(1000,1500);
+    console.log("New balance: "+newBalance);
+}
+catch(e){
+    console.log("Custom error: "+e.message);
+}
+finally{
+    console.log("Thank you");
+}
+
+let name="chocyyyy";
+let greetings1="Hello, "+name+"!";
+let greeting=`Hello, ${name}!`;
+console.log(greeting);
+console.log(greetings1)
+
+
+  </script>
+</body>
+</html>
