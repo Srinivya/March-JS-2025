@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+<script>
+
+    document.writeln(location+"<br>");
+    document.writeln(location.origin+"<br>");
+    document.writeln(location.port+"<br>");
+    document.writeln(location.hostname+"<br>");
+    document.writeln(location.protocol+"<br>");
+
+    document.writeln(window.navigator.appVersion+"<br>");
+    document.writeln(window.navigator.appCodeName+"<br>");
+    document.writeln(window.navigator.appName+"<br>");
+
+
+// alert("Alert");
+
+
+function myFunction(){
+    var text;
+    if(confirm("Press a button!")){
+        text="You pressed Ok";
+    }
+    else{
+        text="You pressed Cancel";
+    }
+    document.getElementById("demo").innerHTML=text;
+}
+
+
+// let a=prompt();
+// a=parseInt(a);
+// document.writeln("The value of a is ",a);
+
+
+// let b=prompt();
+// b=parseInt(b);
+// document.writeln("The value of b is ",b);
+
+// document.writeln(a+b);
+
+
+// localStorage.setItem("name","js");
+
+// console.log(localStorage.getItem('name'));
+
+// localStorage.clear();
+
+
+// sessionStorage.setItem("username","Eleven");
+
+// let user=sessionStorage.getItem("username");
+// console.log(user);
+
+// sessionStorage.clear();
+
+
+document.cookie="username=coll;path=/;max-age=3600";
+
+function getCookie(name){
+    let cookies=document.cookie.split("; ");
+    console.log(cookies);
+    for(let i=0;i<cookies.length;i++){
+
+let [key,value]=cookies[i].split("=");
+if(key===name)
+return value;
+ }
+    return null;
+}
+
+console.log(getCookie("username"));
+
+
+</script>
+
+</body>
+</html>
